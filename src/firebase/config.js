@@ -3,12 +3,12 @@ import { getFirestore, serverTimestamp } from 'firebase/firestore'
 import { getAuth } from 'firebase/auth'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCFMmBk3OGZgEpFgBrMMCob-GBG2M9HLoQ",
-    authDomain: "ig-airways.firebaseapp.com",
-    projectId: "ig-airways",
-    storageBucket: "ig-airways.firebasestorage.app",
-    messagingSenderId: "420737491427",
-    appId: "1:420737491427:web:39389f26d68c67d6db80d6"
+    apiKey: process.env.VUE_APP_FIREBASE_API_KEY,
+    authDomain: process.env.VUE_APP_FIREBASE_AUTH_DOMAIN,
+    projectId: process.env.VUE_APP_FIREBASE_PROJECT_ID,
+    storageBucket: process.env.VUE_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.VUE_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: process.env.VUE_APP_FIREBASE_APP_ID
   }
 
   initializeApp(firebaseConfig)
